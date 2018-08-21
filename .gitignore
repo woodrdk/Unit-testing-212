@@ -3,3 +3,8 @@
 ################################################################################
 
 /.vs/BankingApp/v15
+/BankingApp/bin/Debug
+/BankingApp/obj/Debug
+/BankingAppTests/bin/Debug
+/BankingAppTests/obj/Debug
+/packages
