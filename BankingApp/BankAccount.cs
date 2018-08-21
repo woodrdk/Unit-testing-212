@@ -51,5 +51,19 @@ namespace BankingApp
             Balance -= amount;
             return Balance;
         }
+
+        public double OverDrawn(double withdraw, double fee)
+        {
+            if (Balance - withdraw < 0)
+            {
+                Balance = Balance - withdraw - fee;
+                return Balance;
+            }
+            else
+            {
+                return Balance;
+            }
+
+        }
     }
 }

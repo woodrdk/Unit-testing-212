@@ -107,26 +107,5 @@ namespace BankingApp.Tests
         }
         
     }
-
-    [TestClass()]
-    public class CreditCardTests
-    {
-        [TestMethod()]
-        public void Deposit_PositiveAmount_ShouldAddToExistingBalance()
-        {
-            // ARRANGE - Create variables and objects
-            // for test
-            CreditCard CC = new CreditCard();
-            double startBalance = 0;
-            double depositAmount = 10.5;
-            double expectedBalance = startBalance +
-                                            depositAmount;
-
-            // ACT - Run method under test
-            CC.Deposit(depositAmount);
-
-            // ASSERT - Check if test passes or fails
-            Assert.AreEqual(expectedBalance, CC.CCBalance);
-        }
-    }
+    
 }
